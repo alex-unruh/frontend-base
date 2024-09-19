@@ -30,7 +30,7 @@
         icon="contrast"
         class="q-mr-xs"
         title="Dark/Light"
-        :style="{ color: backgroundColor }"
+        :color="buttonColor"
         @click="store.toggleDarkMode"
       />
 
@@ -40,7 +40,7 @@
         dense
         icon="account_circle"
         title="My Profile"
-        :style="{ color: backgroundColor }"
+        :color="buttonColor"
       />
 
       <q-btn
@@ -49,7 +49,7 @@
         dense
         icon="power_settings_new"
         title="Logout"
-        :style="{ color: backgroundColor }"
+        :color="buttonColor"
       />
     </q-toolbar>
   </q-header>
@@ -71,6 +71,6 @@ import { computed, ref } from 'vue'
 const app = useQuasar()
 const store = useLayoutStore()
 const confirm = ref(false)
-const backgroundColor = computed(() => app.dark.isActive ? 'primary' : '')
+const buttonColor = computed(() => app.dark.isActive ? 'primary' : '')
 
 </script>
