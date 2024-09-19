@@ -5,7 +5,7 @@
   >
     <q-toolbar
       class="justify-center text-uppercase text-weight-bold"
-      :class="{ 'text-teal': app.dark.isActive }"
+      :class="{ 'text-primary': app.dark.isActive }"
     >
       Unruh Front Base v0.1.0
     </q-toolbar>

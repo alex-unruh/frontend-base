@@ -3,7 +3,7 @@
     <PageHeader
       icon="people"
       title="Users"
-      color="secondary"
+      color="primary"
       description="System Administration"
     >
       <q-btn
@@ -41,7 +41,7 @@
         >
           <q-btn
             icon="edit"
-            color="primary"
+            color="warning"
             size="sm"
             padding="xs"
             title="Edit the user"

@@ -22,7 +22,7 @@
         >
           <q-icon
             name="people"
-            color="teal"
+            color="primary"
           />
           <q-tooltip
             v-if="store.mini"
