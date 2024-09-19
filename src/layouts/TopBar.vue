@@ -7,7 +7,7 @@
         round
         icon="menu"
         aria-label="Menu"
-        :class="{ 'text-teal': app.dark.isActive }"
+        :class="{ 'text-primary': app.dark.isActive }"
         @click="store.toggleLeftDrawer"
       />
 
@@ -19,7 +19,7 @@
           icon="home"
           title="To Do"
           :to="{ name: 'index' }"
-          :class="{ 'text-teal': app.dark.isActive }"
+          :class="{ 'text-primary': app.dark.isActive }"
         />
       </q-toolbar-title>
 
@@ -71,6 +71,6 @@ import { computed, ref } from 'vue'
 const app = useQuasar()
 const store = useLayoutStore()
 const confirm = ref(false)
-const backgroundColor = computed(() => app.dark.isActive ? 'teal' : '')
+const backgroundColor = computed(() => app.dark.isActive ? 'primary' : '')
 
 </script>
